@@ -1,0 +1,65 @@
+<?php
+
+namespace Entity;
+ 
+use Doctrine\ORM\Mapping as ORM;
+ 
+/**
+ * @ORM\Entity
+ */
+class Greeting
+{
+     
+    /**
+     * @ORM\Id()
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @var int
+     */
+    private $id;
+     
+    /**
+     * @ORM\Column(type="string", length=255)
+     * @var string
+     */
+    private $content;
+     
+    public function __construct($content) {
+        $this->setContent($content);
+    }
+     
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set content
+     *
+     * @param string $content
+     *
+     * @return Greeting
+     */
+    public function setContent($content)
+    {
+        $this->content = $content;
+
+        return $this;
+    }
+
+    /**
+     * Get content
+     *
+     * @return string
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+}

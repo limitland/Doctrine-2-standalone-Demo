@@ -1,0 +1,6 @@
+/vendor/
+/app/config/parameters.yml
+composer.lock
+.buildpath
+.project
+.settings

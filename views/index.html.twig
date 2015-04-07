@@ -1,0 +1,26 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+
+<div id="content">
+    <h1>Famous Quotes</h1>
+    <table>
+      <thead>
+        <tr>
+          <th style="padding: 10px;">Author</th>
+          <th style="padding: 10px;">Quote</th>
+        </tr>
+      </thead>
+      {% for author in authors %}
+        <tr>
+          <td style="padding: 10px;">{{ author.name }}</td>
+          <td style="padding: 10px;">
+            {% for quote in author.quotes %}
+              <cite>{{ quote.text }}</cite><br>
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+</div>
+    
+{% endblock %}

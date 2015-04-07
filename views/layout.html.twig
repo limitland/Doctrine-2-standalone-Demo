@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8; IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}{{ config.site.name }}{% endblock %}</title>
+    <base href="{{ config.base }}">
+</head>
+  <body>
+    <div class="container">
+  
+{% block content %}{% endblock %}
+      
+    </div> <!-- /container -->
+  </body>
+</html>
