@@ -1,6 +1,6 @@
 Doctrine2 ORM standalone Demo
 =============================
-Developing for a web application using Doctrine 2 without Symfony.
+Developing a web application using Doctrine 2 without Symfony.
 ###### Date: 2014-04, Tags: PHP, Doctine 2, Twig, Howto
 
 
