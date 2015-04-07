@@ -783,7 +783,7 @@ Summary
 -------
 
 
-Once the application and the database gets more complicated - with a lot of 1.N and n:m relations - this apllication
+Once the application and the database gets more complicated - with a lot of 1:n and n:m relations - this apllication
 will sooner or later lack performance. The way the database queries are made here, it is far from optimized. There are 
 5 additional database queries hidden to load the actual quotes, but the way it is done here demonstrates the flexibility 
 of the object relation mapper. Also security is an issue with the routes, the requests, responses and occasionally form
