@@ -1,0 +1,12 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+    <div id="content">
+    <h1>Famous Quotes</h1>
+    {% for author in authors %}
+        <h3>{{ author.name }}</h3>
+        {% for quote in author.quotes %}
+            <blockquote>{{ quote.text }}</blockquote>
+        {% endfor %}
+    {% endfor %}
+    </h3>
+{% endblock %}

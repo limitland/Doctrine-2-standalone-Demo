@@ -1,5 +1,3 @@
-# Site configuration.
-
 locale: 'de_DE'
 
 site:
@@ -8,10 +6,9 @@ site:
 database:
   dbname: 'demodb'
   user: 'root'
-  password: ''
+  password: 'password'
   host: 'localhost'
   driver: 'pdo_mysql'
   charset: 'utf8'
   driverOptions:
     1002: 'SET NAMES utf8'
- 
